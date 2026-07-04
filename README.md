@@ -1,6 +1,6 @@
 # ✈️ Customer Segmentation Analysis using Machine Learning
 
-> An end-to-end machine learning project that segments airline loyalty customers using **K-Means Clustering** to uncover meaningful customer groups and generate actionable business insights. This project is actively evolving toward a fully deployed interactive web application.
+> An end-to-end customer segmentation project that applies **K-Means Clustering** to analyze airline loyalty customers and generate actionable business insights. This project is actively evolving toward a deployable interactive web application.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
 ![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn)
@@ -11,9 +11,9 @@
 
 # 📖 Project Overview
 
-Customer segmentation enables businesses to understand their customers beyond demographics by identifying groups with similar behaviors and characteristics.
+Customer segmentation enables businesses to better understand their customers by identifying groups with similar characteristics and behaviors. These insights support personalized marketing, improved customer retention, and data-driven business decisions.
 
-In this project, customer data from an **Airline Loyalty Program** is analyzed and segmented using **K-Means Clustering**. The workflow covers data preprocessing, exploratory data analysis, feature engineering, clustering, evaluation, and business interpretation to transform raw customer data into actionable insights.
+In this project, customer data from an **Airline Loyalty Program** is analyzed using **K-Means Clustering**. The workflow covers data cleaning, exploratory data analysis, feature engineering, clustering, evaluation, and business interpretation to transform raw customer data into meaningful customer segments.
 
 This repository is an evolving machine learning project. Future updates will extend the analysis into a fully interactive web application where users can upload customer data and generate customer segments in real time.
 
@@ -24,8 +24,8 @@ This repository is an evolving machine learning project. Future updates will ext
 | Stage | Status |
 |--------|--------|
 | Data Cleaning & Preprocessing | ✅ Complete |
-| Exploratory Data Analysis | ✅ Complete |
 | Data Quality Assessment | ✅ Complete |
+| Exploratory Data Analysis (EDA) | ✅ Complete |
 | Feature Engineering | ✅ Complete |
 | Feature Scaling | ✅ Complete |
 | K-Means Clustering | ✅ Complete |
@@ -33,20 +33,20 @@ This repository is an evolving machine learning project. Future updates will ext
 | Business Insights | ✅ Complete |
 | Enhanced Modeling | 🚧 In Progress |
 | Web Application | ⏳ Planned |
-| Deployment | ⏳ Planned |
+| Deployment | ⏳ Upcoming |
 
 ---
 
 # 🎯 Project Objectives
 
-- Clean and prepare customer data.
+- Clean and preprocess customer data.
 - Assess overall data quality.
 - Explore customer demographics and financial behavior.
 - Engineer relevant analytical features.
-- Standardize features for clustering.
+- Standardize selected features for clustering.
 - Determine the optimal number of customer segments.
-- Build customer clusters using K-Means.
-- Interpret customer segments from a business perspective.
+- Build customer segments using K-Means Clustering.
+- Interpret each cluster from a business perspective.
 - Generate actionable recommendations for marketing and customer retention.
 - Deploy the solution as an interactive machine learning application.
 
@@ -54,7 +54,7 @@ This repository is an evolving machine learning project. Future updates will ext
 
 # 📊 Dataset
 
-The dataset contains customer information from an Airline Loyalty Program.
+The dataset contains customer information from an **Airline Loyalty Program**, including demographic, financial, and loyalty-related attributes.
 
 ### Key Features
 
@@ -68,7 +68,7 @@ The dataset contains customer information from an Airline Loyalty Program.
 - Flight Activity
 - Other demographic and behavioral attributes
 
-The objective is to identify groups of customers with similar characteristics for targeted marketing and strategic decision-making.
+The objective is to identify groups of customers with similar characteristics and purchasing behavior to support targeted business strategies.
 
 ---
 
@@ -79,7 +79,7 @@ The objective is to identify groups of customers with similar characteristics fo
 | Programming | Python |
 | Data Analysis | Pandas, NumPy |
 | Machine Learning | Scikit-learn |
-| Visualization | Matplotlib |
+| Data Visualization | Matplotlib |
 | Development | Jupyter Notebook |
 | Version Control | Git & GitHub |
 
@@ -116,9 +116,9 @@ The objective is to identify groups of customers with similar characteristics fo
 
 ### Cluster Selection
 
-The optimal number of clusters was determined using the **Elbow Method**, resulting in **K = 5**.
+The **Elbow Method** was used to determine the optimal number of clusters.
 
-The resulting customer segments reveal distinct differences in customer lifetime value and financial characteristics.
+The final model identified **five distinct customer segments**, each representing different customer characteristics and business opportunities.
 
 ---
 
@@ -126,7 +126,7 @@ The resulting customer segments reveal distinct differences in customer lifetime
 
 ## Elbow Method
 
-The Elbow Method was used to identify the optimal number of clusters by examining the Within-Cluster Sum of Squares (WCSS).
+The Elbow Method was used to determine the optimal number of customer clusters.
 
 ![Elbow Method](images/elbow_method.png)
 
@@ -134,58 +134,58 @@ The Elbow Method was used to identify the optimal number of clusters by examinin
 
 ## Cluster Characteristics Heatmap
 
-Average numerical characteristics of each customer cluster.
+Comparison of the average numerical characteristics across customer clusters.
 
-![Cluster Characteristics](images/cluster_characteristics_heatmap.png)
+![Cluster Characteristics Heatmap](images/cluster_characteristics_heatmap.png)
 
 ---
 
 ## Average Customer Lifetime Value by Cluster
 
-Comparison of the average Customer Lifetime Value across clusters.
+Comparison of the average Customer Lifetime Value (CLV) across all identified customer segments.
 
-![Average CLV](images/average_clv_by_cluster.png)
+![Average CLV by Cluster](images/average_clv_by_cluster.png)
 
 ---
 
 ## Average Salary by Cluster
 
-Comparison of the average salary of customers within each cluster.
+Comparison of the average salary across customer segments.
 
-![Average Salary](images/average_salary_by_cluster.png)
+![Average Salary by Cluster](images/average_salary_by_cluster.png)
 
 ---
 
 ## Number of Customers in Each Cluster
 
-Distribution of customers across all identified segments.
+Distribution of customers across the five identified clusters.
 
 ![Customers Per Cluster](images/customers_per_cluster.png)
 
 ---
 
-# 💡 Business Insights
+# 💡 Key Business Insights
 
-The clustering process identified five distinct customer groups with different financial characteristics and customer lifetime values.
+The clustering analysis identified **five distinct customer segments**, each with unique financial characteristics and customer lifetime values.
 
 Key observations include:
 
-- Certain clusters contain significantly higher-value customers.
-- Some customer groups generate lower lifetime value despite similar demographic characteristics.
-- Salary alone does not fully explain customer value, highlighting the importance of multi-feature segmentation.
-- Cluster sizes vary, providing opportunities for targeted marketing and customer retention strategies.
+- High-value customers are concentrated within specific clusters, making them ideal candidates for premium loyalty programs.
+- Lower-value customer groups present opportunities for targeted promotions and engagement campaigns.
+- Salary alone does not fully explain customer value, demonstrating the importance of multi-feature segmentation.
+- Differences in cluster sizes provide insights into the composition of the customer base and opportunities for personalized marketing.
 
 ---
 
 # 📈 Business Recommendations
 
-Based on the identified customer segments, businesses can:
+Based on the identified customer segments, organizations can:
 
 - Develop personalized marketing campaigns for each customer segment.
-- Prioritize retention efforts for high-value customers.
+- Prioritize retention strategies for high-value customers.
 - Design loyalty programs tailored to premium customer groups.
-- Offer promotional campaigns to increase engagement among lower-value customers.
-- Improve marketing efficiency by targeting customers according to their segment characteristics.
+- Increase engagement among lower-value customers through targeted promotions.
+- Optimize marketing budgets using data-driven customer segmentation.
 
 ---
 
@@ -194,8 +194,11 @@ Based on the identified customer segments, businesses can:
 ```text
 Customer-Segmentation-Analysis/
 │
-├── notebooks/
-│   └── customer_segmentation_analysis.ipynb
+├── Customer Segmentation Analysis.ipynb
+├── README.md
+├── requirements.txt
+├── LICENSE
+├── .gitignore
 │
 ├── data/
 │   └── Customer Segmentation.csv
@@ -204,23 +207,18 @@ Customer-Segmentation-Analysis/
 │   ├── average_clv_by_cluster.png
 │   ├── average_salary_by_cluster.png
 │   ├── cluster_characteristics_heatmap.png
-│   ├── elbow_method.png
-│   └── customers_per_cluster.png
+│   ├── customers_per_cluster.png
+│   └── elbow_method.png
 │
 ├── app/                 # Planned
-├── models/              # Planned
-│
-├── requirements.txt
-├── LICENSE
-├── README.md
-└── .gitignore
+└── models/              # Planned
 ```
 
 ---
 
 # 🚀 Future Roadmap
 
-The project will continue evolving through the following milestones:
+This project will continue evolving through the following milestones:
 
 ### Version 2
 
@@ -231,11 +229,11 @@ The project will continue evolving through the following milestones:
 
 ### Version 3
 
-- Develop an interactive Streamlit web application.
-- Enable customer data upload for segmentation.
+- Build an interactive Streamlit web application.
+- Allow users to upload customer data for segmentation.
 - Deploy the application to the cloud.
 - Improve documentation and testing.
-- Build a production-ready customer segmentation tool.
+- Create a production-ready customer segmentation tool.
 
 ---
 
@@ -282,10 +280,10 @@ Launch Jupyter Notebook:
 jupyter notebook
 ```
 
-Open the notebook:
+Open:
 
 ```text
-notebooks/customer_segmentation_analysis.ipynb
+Customer Segmentation Analysis.ipynb
 ```
 
 ---
@@ -297,21 +295,23 @@ This project is being developed iteratively.
 ### ✅ Current Release
 
 - Data preprocessing
+- Data quality assessment
 - Exploratory Data Analysis
 - Feature Engineering
 - K-Means Clustering
 - Customer Segmentation
+- Cluster Evaluation
 - Business Insights
 
 ### 🚧 Next Release
 
 - Enhanced clustering workflow
+- Additional clustering algorithm comparison
 - Improved feature engineering
-- Additional algorithm comparison
 
 ### 🚀 Final Goal
 
-A fully deployed machine learning web application that enables users to upload customer data, generate customer segments, and visualize insights interactively.
+A fully deployed machine learning web application that enables users to upload customer data, generate customer segments, and visualize business insights interactively.
 
 ---
 
@@ -329,4 +329,4 @@ A fully deployed machine learning web application that enables users to upload c
 
 ## ⭐ Support
 
-If you found this project helpful or interesting, consider giving it a ⭐ on GitHub. Feedback, suggestions, and contributions are always welcome.
+If you found this project useful, consider giving it a ⭐ on GitHub. Feedback, suggestions, and contributions are always welcome.
