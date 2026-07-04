@@ -1,52 +1,54 @@
 # ✈️ Customer Segmentation Analysis using Machine Learning
 
-> An end-to-end machine learning project that segments airline loyalty customers using **K-Means Clustering** to uncover meaningful customer groups and generate actionable business insights. This project is actively evolving from exploratory data analysis to a fully deployed web application for interactive customer segmentation.
+> An end-to-end machine learning project that segments airline loyalty customers using **K-Means Clustering** to uncover meaningful customer groups and generate actionable business insights. This project is actively evolving toward a fully deployed interactive web application.
 
----
-
-## 📌 Project Status
-
-| Stage | Status |
-|--------|--------|
-| 📥 Data Collection | ✅ Complete |
-| 🧹 Data Cleaning & Preprocessing | ✅ Complete |
-| 📊 Exploratory Data Analysis (EDA) | ✅ Complete |
-| 🔍 Data Quality Assessment | ✅ Complete |
-| ⚙️ Feature Engineering | ✅ Complete |
-| 📏 Feature Scaling | ✅ Complete |
-| 🤖 K-Means Clustering | ✅ Complete |
-| 📈 Cluster Evaluation | ✅ Complete |
-| 💡 Business Insights | ✅ Complete |
-| 🚀 Model Improvements | 🚧 In Progress |
-| 🌐 Web Application | ⏳ Planned |
-| ☁️ Deployment | ⏳ Planned |
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-orange?logo=scikitlearn)
+![Status](https://img.shields.io/badge/Status-Active-success)
+![License](https://img.shields.io/badge/License-MIT-green)
 
 ---
 
 # 📖 Project Overview
 
-Understanding customer behavior is essential for businesses seeking to improve customer satisfaction, increase retention, and optimize marketing strategies.
+Customer segmentation enables businesses to understand their customers beyond demographics by identifying groups with similar behaviors and characteristics.
 
-This project analyzes customer data from an **Airline Loyalty Program** to identify meaningful customer segments using **K-Means Clustering**, an unsupervised machine learning algorithm.
+In this project, customer data from an **Airline Loyalty Program** is analyzed and segmented using **K-Means Clustering**. The workflow covers data preprocessing, exploratory data analysis, feature engineering, clustering, evaluation, and business interpretation to transform raw customer data into actionable insights.
 
-The analysis includes comprehensive data cleaning, exploratory data analysis, feature engineering, clustering, visualization, and business interpretation to transform raw customer data into actionable insights.
+This repository is an evolving machine learning project. Future updates will extend the analysis into a fully interactive web application where users can upload customer data and generate customer segments in real time.
 
-This repository represents an evolving end-to-end machine learning project. Future versions will extend the analysis by introducing a production-ready web application that allows users to perform customer segmentation interactively.
+---
+
+# 🚀 Project Status
+
+| Stage | Status |
+|--------|--------|
+| Data Cleaning & Preprocessing | ✅ Complete |
+| Exploratory Data Analysis | ✅ Complete |
+| Data Quality Assessment | ✅ Complete |
+| Feature Engineering | ✅ Complete |
+| Feature Scaling | ✅ Complete |
+| K-Means Clustering | ✅ Complete |
+| Cluster Evaluation | ✅ Complete |
+| Business Insights | ✅ Complete |
+| Enhanced Modeling | 🚧 In Progress |
+| Web Application | ⏳ Planned |
+| Deployment | ⏳ Planned |
 
 ---
 
 # 🎯 Project Objectives
 
-- Clean and preprocess customer data.
+- Clean and prepare customer data.
 - Assess overall data quality.
-- Perform exploratory data analysis (EDA).
+- Explore customer demographics and financial behavior.
 - Engineer relevant analytical features.
-- Standardize selected features for clustering.
-- Determine the optimal number of customer clusters.
-- Build customer segments using K-Means Clustering.
-- Interpret cluster characteristics from a business perspective.
-- Provide actionable recommendations for marketing and customer retention.
-- Deploy the solution as an interactive web application.
+- Standardize features for clustering.
+- Determine the optimal number of customer segments.
+- Build customer clusters using K-Means.
+- Interpret customer segments from a business perspective.
+- Generate actionable recommendations for marketing and customer retention.
+- Deploy the solution as an interactive machine learning application.
 
 ---
 
@@ -54,19 +56,19 @@ This repository represents an evolving end-to-end machine learning project. Futu
 
 The dataset contains customer information from an Airline Loyalty Program.
 
-### Features include:
+### Key Features
 
 - Customer Lifetime Value (CLV)
 - Salary
-- Loyalty Card Type
-- Marital Status
+- Loyalty Card
 - Gender
+- Marital Status
 - Education
 - Enrollment Information
 - Flight Activity
 - Other demographic and behavioral attributes
 
-The dataset is used to identify groups of customers with similar characteristics and purchasing behavior.
+The objective is to identify groups of customers with similar characteristics for targeted marketing and strategic decision-making.
 
 ---
 
@@ -77,7 +79,7 @@ The dataset is used to identify groups of customers with similar characteristics
 | Programming | Python |
 | Data Analysis | Pandas, NumPy |
 | Machine Learning | Scikit-learn |
-| Data Visualization | Matplotlib |
+| Visualization | Matplotlib |
 | Development | Jupyter Notebook |
 | Version Control | Git & GitHub |
 
@@ -85,48 +87,26 @@ The dataset is used to identify groups of customers with similar characteristics
 
 # 🔄 Project Workflow
 
-The project follows an end-to-end data science workflow:
-
 1. Data Loading
 2. Data Quality Assessment
 3. Missing Value Investigation
-4. Exploratory Data Analysis (EDA)
+4. Exploratory Data Analysis
 5. Outlier Detection
 6. Feature Engineering
 7. Feature Selection
 8. Feature Scaling using StandardScaler
-9. Optimal Cluster Selection (Elbow Method)
+9. Optimal Cluster Selection using the Elbow Method
 10. K-Means Clustering
-11. Cluster Visualization
+11. Cluster Evaluation
 12. Cluster Profiling
 13. Business Insights
 14. Business Recommendations
 
 ---
 
-# 📊 Exploratory Data Analysis
-
-The exploratory analysis investigates:
-
-- Missing values
-- Duplicate records
-- Data types
-- Distribution of customer demographics
-- Salary distribution
-- Customer Lifetime Value distribution
-- Loyalty Card distribution
-- Marital Status
-- Gender distribution
-- Correlation between numerical variables
-- Outlier detection
-
-The goal is to understand customer characteristics before applying machine learning techniques.
-
----
-
 # 🤖 Machine Learning
 
-### Algorithm Used
+### Algorithm
 
 - K-Means Clustering
 
@@ -134,54 +114,66 @@ The goal is to understand customer characteristics before applying machine learn
 
 - StandardScaler
 
-### Optimal Number of Clusters
+### Cluster Selection
 
-The Elbow Method was used to determine the optimal value of **K**, resulting in:
+The optimal number of clusters was determined using the **Elbow Method**, resulting in **K = 5**.
 
-**K = 3**
-
-The model groups customers into three distinct customer segments.
+The resulting customer segments reveal distinct differences in customer lifetime value and financial characteristics.
 
 ---
 
-# 📈 Results
+# 📈 Key Visualizations
 
-The clustering model successfully identified three meaningful customer groups based primarily on:
+## Elbow Method
 
-- Customer Lifetime Value (CLV)
-- Salary
+The Elbow Method was used to identify the optimal number of clusters by examining the Within-Cluster Sum of Squares (WCSS).
 
-Each cluster represents customers with different financial characteristics and purchasing potential.
-
----
-
-# 💡 Key Business Insights
-
-### 🟢 Cluster 0
-
-- Lower salary
-- Lower customer lifetime value
-- Price-sensitive customers
-- Suitable for promotional campaigns
+![Elbow Method](images/elbow_method.png)
 
 ---
 
-### 🔵 Cluster 1
+## Cluster Characteristics Heatmap
 
-- Moderate salary
-- Moderate customer lifetime value
-- Loyal regular customers
-- Ideal for personalized engagement
+Average numerical characteristics of each customer cluster.
+
+![Cluster Characteristics](images/cluster_characteristics_heatmap.png)
 
 ---
 
-### 🟣 Cluster 2
+## Average Customer Lifetime Value by Cluster
 
-- High salary
-- High customer lifetime value
-- Premium customers
-- High retention priority
-- Best suited for exclusive rewards and loyalty programs
+Comparison of the average Customer Lifetime Value across clusters.
+
+![Average CLV](images/average_clv_by_cluster.png)
+
+---
+
+## Average Salary by Cluster
+
+Comparison of the average salary of customers within each cluster.
+
+![Average Salary](images/average_salary_by_cluster.png)
+
+---
+
+## Number of Customers in Each Cluster
+
+Distribution of customers across all identified segments.
+
+![Customers Per Cluster](images/customers_per_cluster.png)
+
+---
+
+# 💡 Business Insights
+
+The clustering process identified five distinct customer groups with different financial characteristics and customer lifetime values.
+
+Key observations include:
+
+- Certain clusters contain significantly higher-value customers.
+- Some customer groups generate lower lifetime value despite similar demographic characteristics.
+- Salary alone does not fully explain customer value, highlighting the importance of multi-feature segmentation.
+- Cluster sizes vary, providing opportunities for targeted marketing and customer retention strategies.
 
 ---
 
@@ -189,29 +181,11 @@ Each cluster represents customers with different financial characteristics and p
 
 Based on the identified customer segments, businesses can:
 
-- Offer discounts and promotional campaigns to budget-conscious customers.
-- Deliver personalized marketing campaigns to regular customers.
-- Prioritize premium services and loyalty rewards for high-value customers.
-- Improve customer retention using targeted engagement strategies.
-- Optimize marketing spending through customer segmentation.
-
----
-
-# 📷 Project Visualizations
-
-The repository includes visualizations such as:
-
-- Dataset Overview
-- Missing Value Analysis
-- Salary Distribution
-- Customer Lifetime Value Distribution
-- Correlation Heatmap
-- Outlier Detection
-- Elbow Method
-- Customer Clusters
-- Cluster Distribution
-
-> Screenshots of these visualizations are available in the **images/** directory.
+- Develop personalized marketing campaigns for each customer segment.
+- Prioritize retention efforts for high-value customers.
+- Design loyalty programs tailored to premium customer groups.
+- Offer promotional campaigns to increase engagement among lower-value customers.
+- Improve marketing efficiency by targeting customers according to their segment characteristics.
 
 ---
 
@@ -224,43 +198,44 @@ Customer-Segmentation-Analysis/
 │   └── customer_segmentation_analysis.ipynb
 │
 ├── data/
-│   ├── Customer Segmentation.csv
-│   └── README.md
+│   └── Customer Segmentation.csv
 │
 ├── images/
-│   ├── dataset_overview.png
-│   ├── missing_values.png
-│   ├── salary_distribution.png
-│   ├── correlation_heatmap.png
+│   ├── average_clv_by_cluster.png
+│   ├── average_salary_by_cluster.png
+│   ├── cluster_characteristics_heatmap.png
 │   ├── elbow_method.png
-│   ├── customer_clusters.png
-│   └── cluster_distribution.png
+│   └── customers_per_cluster.png
 │
 ├── app/                 # Planned
 ├── models/              # Planned
 │
 ├── requirements.txt
 ├── LICENSE
-├── .gitignore
-└── README.md
+├── README.md
+└── .gitignore
 ```
 
 ---
 
 # 🚀 Future Roadmap
 
-This project is actively being improved.
+The project will continue evolving through the following milestones:
 
-### Planned enhancements include:
+### Version 2
 
-- Improve feature engineering
-- Compare K-Means with DBSCAN and Hierarchical Clustering
-- Improve cluster profiling
-- Build an interactive Streamlit web application
-- Deploy the application to the cloud
-- Allow users to upload customer data for segmentation
-- Improve project documentation
-- Add automated testing
+- Improve feature engineering.
+- Compare K-Means with additional clustering algorithms.
+- Improve cluster profiling.
+- Optimize model performance.
+
+### Version 3
+
+- Develop an interactive Streamlit web application.
+- Enable customer data upload for segmentation.
+- Deploy the application to the cloud.
+- Improve documentation and testing.
+- Build a production-ready customer segmentation tool.
 
 ---
 
@@ -271,10 +246,9 @@ This project is actively being improved.
 - Exploratory Data Analysis (EDA)
 - Feature Engineering
 - Feature Scaling
-- Machine Learning
-- Unsupervised Learning
+- Unsupervised Machine Learning
 - K-Means Clustering
-- Model Evaluation
+- Cluster Evaluation
 - Business Analytics
 - Data Visualization
 - Python Programming
@@ -290,7 +264,7 @@ Clone the repository:
 git clone https://github.com/Bangaly-DS/Customer-Segmentation-Analysis.git
 ```
 
-Navigate into the project directory:
+Navigate to the project directory:
 
 ```bash
 cd Customer-Segmentation-Analysis
@@ -308,7 +282,7 @@ Launch Jupyter Notebook:
 jupyter notebook
 ```
 
-Open:
+Open the notebook:
 
 ```text
 notebooks/customer_segmentation_analysis.ipynb
@@ -320,25 +294,24 @@ notebooks/customer_segmentation_analysis.ipynb
 
 This project is being developed iteratively.
 
-### ✅ Current Version
+### ✅ Current Release
 
 - Data preprocessing
 - Exploratory Data Analysis
+- Feature Engineering
 - K-Means Clustering
-- Customer segmentation
-- Business insights
+- Customer Segmentation
+- Business Insights
 
-### 🚧 Next Version
+### 🚧 Next Release
 
-- Enhanced feature engineering
-- Improved clustering workflow
-- Additional clustering algorithm comparisons
+- Enhanced clustering workflow
+- Improved feature engineering
+- Additional algorithm comparison
 
-### 🚀 Final Version
+### 🚀 Final Goal
 
-- Interactive web application
-- Cloud deployment
-- Production-ready customer segmentation tool
+A fully deployed machine learning web application that enables users to upload customer data, generate customer segments, and visualize insights interactively.
 
 ---
 
@@ -346,14 +319,14 @@ This project is being developed iteratively.
 
 **Bangaly Sano**
 
-📧 Email: sanobangaly@hotmail.com
+📧 **Email:** sanobangaly@hotmail.com
 
-🔗 LinkedIn: https://linkedin.com/in/sano-bangaly-064535146
+🔗 **LinkedIn:** https://linkedin.com/in/sano-bangaly-064535146
 
-💻 GitHub: https://github.com/Bangaly-DS
+💻 **GitHub:** https://github.com/Bangaly-DS
 
 ---
 
 ## ⭐ Support
 
-If you found this project useful, consider giving it a ⭐ on GitHub. Feedback, suggestions, and contributions are always welcome.
+If you found this project helpful or interesting, consider giving it a ⭐ on GitHub. Feedback, suggestions, and contributions are always welcome.
