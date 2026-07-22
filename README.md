@@ -12,7 +12,9 @@ The final application allows users to enter customer information and receive a r
 
 ## 🚀 Live Demo
 
-🔗 **Streamlit Application:** Coming Soon
+🔗 **Try the Customer Segmentation Application:**
+
+https://bangaly-customer-segmentation.streamlit.app
 
 ---
 
