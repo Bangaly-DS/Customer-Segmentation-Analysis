@@ -390,12 +390,13 @@ def render_customer_form():
             )
 
             enrollment_date = st.date_input(
-                "Enrollment Date",
+                "Enrollment Date (2010–Present)",
                 value=DEFAULT_ENROLLMENT_DATE,
                 min_value=MIN_ENROLLMENT_DATE,
                 max_value=date.today(),
-                help="Select the customer's enrollment date.",
+                help="Select an enrollment date between January 1, 2010 and today.",
             )
+        
 
         st.markdown("")
 
