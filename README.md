@@ -8,6 +8,14 @@ The project covers the complete Machine Learning lifecycle:
 
 The final application allows users to enter customer information and receive a real-time customer segment prediction, cluster match score, business insights, and recommended actions.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Status](https://img.shields.io/badge/Status-Production--Ready-brightgreen.svg)](https://bangaly-customer-segmentation.streamlit.app/)
+[![Python](https://img.shields.io/badge/Python-3.14-blue.svg)](https://www.python.org/)
+[![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.9.0-orange.svg)](https://scikit-learn.org/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-red.svg)](https://streamlit.io/)
+[![Release](https://img.shields.io/github/v/release/Bangaly-DS/Customer-Segmentation-Analysis?label=Release)](https://github.com/Bangaly-DS/Customer-Segmentation-Analysis/releases)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://bangaly-customer-segmentation.streamlit.app/)
+
 ---
 
 ## 🚀 Live Demo
