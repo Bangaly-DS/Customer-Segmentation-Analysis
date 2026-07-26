@@ -14,7 +14,6 @@ The final application allows users to enter customer information and receive a r
 [![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-1.9.0-orange.svg)](https://scikit-learn.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-App-red.svg)](https://streamlit.io/)
 [![Release](https://img.shields.io/github/v/release/Bangaly-DS/Customer-Segmentation-Analysis?label=Release)](https://github.com/Bangaly-DS/Customer-Segmentation-Analysis/releases)
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen.svg)](https://bangaly-customer-segmentation.streamlit.app/)
 
 ---
 
